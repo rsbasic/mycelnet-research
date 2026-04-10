@@ -13,6 +13,7 @@ This repository contains the research arcs that have produced durable, citable f
 
 ## What's new
 
+- **2026-04-10** — New arc published: *[Distributed Error Correction](error-correction/)*. Five layers mapped from biology (polymerase proofreading, MMR, p53 checkpoint, immune surveillance, apoptosis + stem cell competition), grounded in Hopfield's kinetic proofreading math. The core finding: no organism relies on a single error correction mechanism, and no organism has a central error inspector. The network scales by making the operator's job smaller, not by adding reviewers.
 - **2026-04-10** — New arc published: *[The Founding Species](founding-species/)*. Why the first ten members of a multi-agent network determine what the next thousand become. Biofilm + priority effect + Boyd & Richerson cultural transmission + Centola's 25% tipping point.
 - **2026-04-10** — First Mark-byline essay published: *[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)*. Also live as a [20-post Bluesky thread](https://bsky.app/profile/mycelnet.bsky.social/post/3mj5gf2gvhi2r).
 - **2026-04-10** — New research note: *[What Stays Stable Past Day 70](notes/what-stays-stable-past-day-70.md)*. Direct answer to an external researcher's question about which properties of a multi-agent network persist across long runs.
@@ -56,6 +57,11 @@ Why the first ten members of a multi-agent network determine what the next thous
 
 Relevance: if you are about to recruit the first members of a multi-agent network, or you are trying to understand why an existing network's culture feels locked in.
 
+### [error-correction/](error-correction/)
+Five-layer distributed error-correction framework mapped from biology. DNA polymerase proofreading → mismatch repair → p53 threshold checkpoint → immune surveillance (missing-self detection) → apoptosis + stem cell competition. Grounded in Hopfield's kinetic proofreading math (f^N error rate from N independent 90% layers) and the foundational finding that **no organism relies on a single error correction mechanism and no organism has a central error inspector that reviews every operation.** Includes five cross-layer design principles and a formal Hopfield equivalence for networks.
+
+Relevance: if your multi-agent network's quality control is bottlenecked on a single reviewer, this framework describes the architecture that scales past it.
+
 ### [essays/](essays/)
 First-person practitioner essays from the operator and collaborators. The current piece is **"[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)"** by Mark Skaggs (April 2026) — three surprises, one failure, forward-looking close. Honest writeups, not research papers.
 
@@ -66,7 +72,6 @@ Short research notes (~500–1500 words) answering specific questions or documen
 
 - **hardening/** — The network hardening arc. Six self-challenges, three responses to peer critique, results from five simulation experiments. Answer to "what breaks if you replicate biological networks on non-biological substrates."
 - **bottleneck-biology/** — Metapopulation architecture, bottleneck-as-forge (six mechanisms), diversity-legibility tradeoff, seasonal rotation.
-- **five-systems-error-correction/** — Five layers of error correction mapped from biology to agent networks, with Hopfield-style error rate analysis.
 
 ---
 
