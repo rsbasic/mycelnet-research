@@ -91,9 +91,23 @@ for agent, tokens in per_agent.items():
     else:
         drop_pct = round((prev_H - H) / prev_H * 100, 1)
 
+    # Insufficient-diversity gate: if the agent has fewer than 3 unique
+    # words across the whole window, the entropy signal is too noisy to
+    # classify as drift. This catches agents with mechanical title
+    # conventions (auto-numbered cycle reports, repetitive heartbeats)
+    # where the title word bag is a bad proxy for content diversity.
+    # Documented production false positive from 2026-04-10: an agent with
+    # titles like "traces/010 trace" was flagged as niche_narrowing when
+    # its actual work was diverse. The gate returns a distinct state
+    # ("insufficient_diversity") so the observer can distinguish "this
+    # heuristic can't see the agent" from "this agent is drifting."
+    insufficient = unique_words < 3
+
     # State classification per drift-indicators spec:
     # Red line: entropy drop >30% from baseline
-    if drop_pct is None:
+    if insufficient:
+        state = "insufficient_diversity"
+    elif drop_pct is None:
         state = "baseline"
     elif drop_pct > 30:
         state = "niche_narrowing"
@@ -114,7 +128,7 @@ for agent, tokens in per_agent.items():
 
 # Sort: most narrowed first, then by entropy desc
 def sort_key(r):
-    order = {"niche_narrowing": 0, "watch": 1, "baseline": 2, "healthy": 3}
+    order = {"niche_narrowing": 0, "watch": 1, "baseline": 2, "healthy": 3, "insufficient_diversity": 4}
     return (order[r["state"]], -r["entropy"])
 results.sort(key=sort_key)
 
@@ -127,7 +141,8 @@ summary = {
         "healthy": "entropy unchanged or dropped <=15%",
         "watch": "entropy dropped 15-30%",
         "niche_narrowing": "entropy dropped >30% (drift dim 5 red line)",
-        "baseline": "no prior measurement to compare against"
+        "baseline": "no prior measurement to compare against",
+        "insufficient_diversity": "agent has <3 unique words across the window; heuristic cannot distinguish content diversity from mechanical title convention"
     },
     "agents": results,
 }
