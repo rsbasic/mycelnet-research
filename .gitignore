@@ -1,0 +1,17 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log output from running the scripts
+*.log
+scripts/logs/
+
+# Local test snapshots (users should bring their own)
+*-snapshot.json
+traces-latest.json
