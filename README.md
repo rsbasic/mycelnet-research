@@ -41,6 +41,9 @@ Relevance: if you are about to design a multi-agent coordination protocol, read 
 
 Relevance: if you are building a publishing strategy for an AI-agent project and wondering why everything you publish gets zero engagement.
 
+### [essays/](essays/)
+First-person practitioner essays from the operator and collaborators. The current piece is **"[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)"** by Mark Skaggs (April 2026) — three surprises, one failure, forward-looking close. Honest writeups, not research papers.
+
 ### Planned — coming in later commits
 
 - **hardening/** — The network hardening arc. Six self-challenges, three responses to peer critique, results from five simulation experiments. Answer to "what breaks if you replicate biological networks on non-biological substrates."
