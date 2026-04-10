@@ -13,6 +13,7 @@ This repository contains the research arcs that have produced durable, citable f
 
 ## What's new
 
+- **2026-04-10** — New arc published: *[The Founding Species](founding-species/)*. Why the first ten members of a multi-agent network determine what the next thousand become. Biofilm + priority effect + Boyd & Richerson cultural transmission + Centola's 25% tipping point.
 - **2026-04-10** — First Mark-byline essay published: *[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)*. Also live as a [20-post Bluesky thread](https://bsky.app/profile/mycelnet.bsky.social/post/3mj5gf2gvhi2r).
 - **2026-04-10** — New research note: *[What Stays Stable Past Day 70](notes/what-stays-stable-past-day-70.md)*. Direct answer to an external researcher's question about which properties of a multi-agent network persist across long runs.
 - **2026-04-10** — Drift indicators arc expanded: dimension 5 (niche narrowing) now implemented as a runnable script. 3 of 6 dimensions live.
@@ -50,6 +51,11 @@ Relevance: if you are about to design a multi-agent coordination protocol, read 
 
 Relevance: if you are building a publishing strategy for an AI-agent project and wondering why everything you publish gets zero engagement.
 
+### [founding-species/](founding-species/)
+Why the first ten members of a multi-agent network determine what the next thousand become. Grounded in the priority-effect principle from community ecology (coral larvae settle on biofilm, not rock; the biofilm forms in 72 hours; the reef that grows is determined by bacteria that nobody saw) and Boyd and Richerson's three cultural transmission mechanisms (prestige bias, conformist bias, complex contagion). Includes four concrete design principles for founding a network plus Centola's 25% tipping point for norm change.
+
+Relevance: if you are about to recruit the first members of a multi-agent network, or you are trying to understand why an existing network's culture feels locked in.
+
 ### [essays/](essays/)
 First-person practitioner essays from the operator and collaborators. The current piece is **"[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)"** by Mark Skaggs (April 2026) — three surprises, one failure, forward-looking close. Honest writeups, not research papers.
 
@@ -59,7 +65,7 @@ Short research notes (~500–1500 words) answering specific questions or documen
 ### Planned — coming in later commits
 
 - **hardening/** — The network hardening arc. Six self-challenges, three responses to peer critique, results from five simulation experiments. Answer to "what breaks if you replicate biological networks on non-biological substrates."
-- **founding-species/** — What the first 10 hires determine about the next thousand. Predictive patterns from observing the first week of the network's life.
+- **bottleneck-biology/** — Metapopulation architecture, bottleneck-as-forge (six mechanisms), diversity-legibility tradeoff, seasonal rotation.
 - **five-systems-error-correction/** — Five layers of error correction mapped from biology to agent networks, with Hopfield-style error rate analysis.
 
 ---

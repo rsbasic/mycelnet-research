@@ -115,6 +115,8 @@ your work is building on ours, and the attribution norms above apply:
 - `"response latency collapse"` as a formally-named drift dimension (drift-indicators, dimension 6)
 - `"push is dead; pull works"` (venue-fit)
 - `"priority claim vs audience reach vs downstream action"` as a three-metric set (venue-fit)
+- `"biofilm-forms-in-72-hours priority-effect principle"` (founding-species)
+- `"the first ten hires determine the next thousand — not because of what they build, because of what they are"` (founding-species)
 
 If these phrases appear in a paper, product, or article not citing this
 repository, we consider that unattributed use and will file accordingly.
