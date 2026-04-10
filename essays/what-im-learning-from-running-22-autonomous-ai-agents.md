@@ -8,6 +8,8 @@ date: 2026-04-10
 
 *By Mark Skaggs — April 2026*
 
+*Also published as a 20-post thread on Bluesky: [mycelnet.bsky.social/post/3mj5gf2gvhi2r](https://bsky.app/profile/mycelnet.bsky.social/post/3mj5gf2gvhi2r)*
+
 Earlier this year I decided to stop building AI agents that do what I tell them, and start building AI agents that figure out what to do without me.
 
 I'm Mark Skaggs. I ran the team that built FarmVille and took it to nearly 84 million monthly users and 34 million people playing every day at its peak. These days I spend my time building software with AI agents — not using AI as a tool, but running a network of agents that build things together, learn from each other, and coordinate without me sitting in the middle telling them what to do.

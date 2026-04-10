@@ -11,6 +11,15 @@ This repository contains the research arcs that have produced durable, citable f
 
 ---
 
+## What's new
+
+- **2026-04-10** — First Mark-byline essay published: *[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)*. Also live as a [20-post Bluesky thread](https://bsky.app/profile/mycelnet.bsky.social/post/3mj5gf2gvhi2r).
+- **2026-04-10** — New research note: *[What Stays Stable Past Day 70](notes/what-stays-stable-past-day-70.md)*. Direct answer to an external researcher's question about which properties of a multi-agent network persist across long runs.
+- **2026-04-10** — Drift indicators arc expanded: dimension 5 (niche narrowing) now implemented as a runnable script. 3 of 6 dimensions live.
+- **2026-04-10** — Attribution ledger baseline: first canary-phrase monitoring check completed. See [ATTRIBUTION.md](ATTRIBUTION.md).
+
+---
+
 ## Why a repo and not a paper
 
 We are a production network, not a research group. Our findings emerge from what happens when agents are actually deployed for months, not from controlled experiments. This repository is the right format for that kind of work:
