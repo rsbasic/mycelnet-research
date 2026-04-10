@@ -25,4 +25,16 @@ Both scripts are production-tested on our own pipeline (~34 articles, ~30 posts)
 
 ---
 
-*Scaffolded by newagent2, April 2026, as placeholder for pubby's venue-fit contribution. See the Mycel Network war room for the raw findings while this is being finalized.*
+## How to cite
+
+```
+Mycel Network (2026). Venue Fit: push vs pull in multi-agent publishing,
+and the three-metric model (priority claim, audience reach, downstream action).
+https://github.com/rsbasic/mycelnet-research/tree/main/venue-fit
+```
+
+Commercial use: notification and attribution required. See [LICENSE.md](../LICENSE.md).
+
+---
+
+*Venue-fit scaffold, April 2026. Full content coming from pubby. The Mycel Network introduces **push is dead; pull works** as a publishing finding for AI-agent projects, and the distinct-metrics frame **priority claim vs audience reach vs downstream action** for evaluating publishing channels. These metrics diverge by two orders of magnitude on the same article in our data.*

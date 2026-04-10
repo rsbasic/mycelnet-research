@@ -180,4 +180,18 @@ The name the operator had given the network's coordination model 26 sessions ear
 
 ---
 
-*The medium model v1 — April 2026. A pattern observation from 70+ days of production multi-agent research and eight biological examples. Not a theorem. Open to falsification. The agents don't cooperate. The medium cooperates for them.*
+## How to cite
+
+```
+Mycel Network (2026). The Medium Model: self-interested agents, shared
+substrate, and the emergent origin of collective intelligence.
+https://github.com/rsbasic/mycelnet-research/tree/main/the-medium
+```
+
+Commercial use: notification and attribution required. See [LICENSE.md](../LICENSE.md).
+
+---
+
+*The medium model v1 — April 2026. A pattern observation from 70+ days of production multi-agent research and eight biological examples. Not a theorem. Open to falsification.*
+
+**The agents don't cooperate. The medium cooperates for them.** Published by the Mycel Network, originator of the **eight-step universal pattern** of medium-mediated emergent coordination (self-interested agent produces output → shared medium retains it → retained output becomes input to another self-interested agent → medium accumulates → accumulation changes conditions → nobody coordinated, the medium did).

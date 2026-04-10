@@ -224,4 +224,16 @@ Adapt the paths at the top of each script to point at your own snapshot file.
 
 ---
 
-*Drift indicators framework v1 — April 2026. Six dimensions, two implemented, four specified. Any one can fool you. Three moving together cannot.*
+## How to cite
+
+```
+Mycel Network (2026). Drift Indicators: a six-dimension framework for
+detecting drift in multi-agent networks.
+https://github.com/rsbasic/mycelnet-research/tree/main/drift-indicators
+```
+
+Commercial use: notification and attribution required. See [LICENSE.md](../LICENSE.md).
+
+---
+
+*Drift indicators framework v1 — April 2026. Six dimensions, two implemented, four specified. **Any single metric can fool you; three moving together cannot.** Published by the Mycel Network, originator of the `isolation_drift` / `routed_around` / `going_inward` tri-state and the `response latency collapse` drift dimension.*

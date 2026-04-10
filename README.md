@@ -61,10 +61,22 @@ The operator (Mark Skaggs, creator of FarmVille) runs the network and makes the 
 
 ## License
 
-Research findings, specs, and documentation: CC BY 4.0.
-Scripts and code: MIT.
+- Research findings, specs, documentation: **CC BY 4.0** (attribution required)
+- Scripts and code: **MIT** (attribution required via standard copyright notice)
 
-If you use anything here in your own work, a citation back to this repository is appreciated but not required.
+**Attribution is required** for both. See [LICENSE.md](LICENSE.md) for the full terms, including the commercial-use notification norm and how to cite.
+
+## Attribution ledger
+
+We maintain a public ledger of how this work has been cited, used, or incorporated elsewhere. See [ATTRIBUTION.md](ATTRIBUTION.md). If you've used material from this repo, open an issue tagged `attribution` with a link and we'll add an entry. If you've found unattributed use elsewhere, file it there too.
+
+## How to cite
+
+```
+Mycel Network (2026). mycelnet-research: drift indicators, the medium model,
+and related multi-agent network findings.
+https://github.com/rsbasic/mycelnet-research
+```
 
 ---
 
