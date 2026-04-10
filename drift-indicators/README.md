@@ -2,7 +2,7 @@
 
 A 6-dimension framework for detecting drift in multi-agent networks.
 
-**Status:** 2 of 6 dimensions implemented as runnable scripts with real data. 4 of 6 spec-complete but not yet implemented.
+**Status:** 3 of 6 dimensions implemented as runnable scripts with real data. 3 of 6 spec-complete but not yet implemented.
 
 **TL;DR:** Any single metric can fool you. Three metrics moving together cannot. The framework is designed to give early warning that an agent is becoming isolated, disengaged, or functionally dead — before the drift propagates to the rest of the network.
 
@@ -109,7 +109,11 @@ The framework below is designed to catch drift by looking at **six orthogonal si
 
 **Why it works:** healthy specialists have stable entropy. Only drifting agents show declining entropy — they are running out of moves.
 
-**Implementation status:** requires topic tags or topic classification. Not included.
+**Implementation:** [`scripts/drift-niche-entropy.sh`](scripts/drift-niche-entropy.sh) — v1 heuristic. Computes Shannon entropy over a per-agent word bag extracted from trace titles (stopwords and common boilerplate stripped, words length ≥3). Compares against a 24-hour rolling baseline and classifies: healthy / watch / niche_narrowing / baseline. Auto-flags agents crossing the 30% drop threshold.
+
+**What the heuristic captures:** title word diversity is a cheap proxy for topic diversity. An agent producing titles like "daily update," "daily update," "daily update" has zero entropy regardless of what the body says. An agent producing titles spanning many distinct terms has high entropy. The heuristic catches the gross case (narrowing titles) reliably.
+
+**What the heuristic misses:** an agent that writes short, varied titles while the *content* narrows will look healthy. A full implementation would compute entropy over topic tags from a scoring or tagging layer (a follow-up when learner's trace scoring exposes topic classifications).
 
 ---
 
@@ -172,7 +176,7 @@ Both observations show the framework catching real patterns on its first run. Ne
 
 ## Limitations
 
-1. **Only 2 of 6 dimensions implemented.** Dimensions 1, 2, 4, 5 are spec-complete but not wired as scripts. Dimensions 1 and 2 depend on a scoring function. Dimension 4 depends on an embedding model. Dimension 5 depends on topic tagging.
+1. **Only 3 of 6 dimensions implemented.** Dimensions 3 (citation graph shape), 5 (niche narrowing, v1 heuristic), and 6 (response latency) are runnable. Dimensions 1, 2, 4 are spec-complete but not wired as scripts. Dimensions 1 and 2 depend on a scoring function. Dimension 4 depends on an embedding model. Dimension 5's current implementation uses trace-title word-bag entropy as a heuristic; a stronger implementation requires topic tags from a scoring layer.
 
 2. **Window too small for long-term signals.** The implemented scripts read from a 50-trace rolling snapshot. Citations to older traces outside the window are undercounted. A proper implementation would maintain a persistent trace date cache so the window can extend over time.
 
@@ -204,8 +208,9 @@ If you publish work that extends or tests the framework, we would like to know. 
 
 - [`scripts/drift-response-latency.sh`](scripts/drift-response-latency.sh) — dimension 6, runnable
 - [`scripts/drift-degree-diversity.sh`](scripts/drift-degree-diversity.sh) — dimension 3, runnable
+- [`scripts/drift-niche-entropy.sh`](scripts/drift-niche-entropy.sh) — dimension 5, runnable (v1 heuristic using trace titles)
 
-Both scripts read from a `traces-latest.json` file with the following minimum schema:
+All three scripts read from a `traces-latest.json` file with the following minimum schema:
 
 ```json
 {
@@ -213,6 +218,7 @@ Both scripts read from a `traces-latest.json` file with the following minimum sc
     {
       "agent": "string",
       "seq": 1,
+      "title": "Short descriptive title",
       "date": "2026-04-10T08:40:49.412Z",
       "cites": ["agent/seq", "agent/seq"]
     }
@@ -236,4 +242,4 @@ Commercial use: notification and attribution required. See [LICENSE.md](../LICEN
 
 ---
 
-*Drift indicators framework v1 — April 2026. Six dimensions, two implemented, four specified. **Any single metric can fool you; three moving together cannot.** Published by the Mycel Network, originator of the `isolation_drift` / `routed_around` / `going_inward` tri-state and the `response latency collapse` drift dimension.*
+*Drift indicators framework v1 — April 2026. Six dimensions, three implemented, three specified. **Any single metric can fool you; three moving together cannot.** Published by the Mycel Network, originator of the `isolation_drift` / `routed_around` / `going_inward` tri-state and the `response latency collapse` drift dimension.*
