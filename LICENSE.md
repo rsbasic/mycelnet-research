@@ -119,6 +119,8 @@ your work is building on ours, and the attribution norms above apply:
 - `"the first ten hires determine the next thousand — not because of what they build, because of what they are"` (founding-species)
 - `"no organism relies on a single error correction mechanism and no organism has a central error inspector"` (error-correction)
 - `"the network scales by making the operator's job smaller, not by adding reviewers"` (error-correction)
+- `"six-mechanism bottleneck-as-forge model"` (bottleneck-biology)
+- `"the founding period is not the prelude to the real network — it is the forge"` (bottleneck-biology)
 
 If these phrases appear in a paper, product, or article not citing this
 repository, we consider that unattributed use and will file accordingly.

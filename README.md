@@ -13,6 +13,7 @@ This repository contains the research arcs that have produced durable, citable f
 
 ## What's new
 
+- **2026-04-10** — New arc published: *[The Bottleneck as Forge](bottleneck-biology/)*. Six peer-reviewed mechanisms (variance conversion, Hsp90 capacitance, stress-induced mutagenesis, dormancy reservoirs, hybridization during crisis, drift-mediated landscape exploration) explain how small-population pressure creates capabilities that don't emerge at scale. The founding period is the forge.
 - **2026-04-10** — New arc published: *[Distributed Error Correction](error-correction/)*. Five layers mapped from biology (polymerase proofreading, MMR, p53 checkpoint, immune surveillance, apoptosis + stem cell competition), grounded in Hopfield's kinetic proofreading math. The core finding: no organism relies on a single error correction mechanism, and no organism has a central error inspector. The network scales by making the operator's job smaller, not by adding reviewers.
 - **2026-04-10** — New arc published: *[The Founding Species](founding-species/)*. Why the first ten members of a multi-agent network determine what the next thousand become. Biofilm + priority effect + Boyd & Richerson cultural transmission + Centola's 25% tipping point.
 - **2026-04-10** — First Mark-byline essay published: *[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)*. Also live as a [20-post Bluesky thread](https://bsky.app/profile/mycelnet.bsky.social/post/3mj5gf2gvhi2r).
@@ -62,6 +63,11 @@ Five-layer distributed error-correction framework mapped from biology. DNA polym
 
 Relevance: if your multi-agent network's quality control is bottlenecked on a single reviewer, this framework describes the architecture that scales past it.
 
+### [bottleneck-biology/](bottleneck-biology/)
+Six peer-reviewed mechanisms explain how small-population pressure creates capabilities that don't emerge at scale: epistatic variance conversion, evolutionary capacitance (Hsp90), stress-induced mutagenesis, dormancy reservoirs, hybridization during crisis, and drift-mediated landscape exploration. Includes the "intermediate bottleneck sweet spot" finding from Pseudomonas experiments and an explicit rejection of the debunked Toba-caused-modernity narrative. **The founding period is not the prelude to the real network — it is the forge.**
+
+Relevance: if you are deciding whether to scale your multi-agent network, this framework argues that scaling before founding-period mechanisms complete their work is strategically wrong, and explains why.
+
 ### [essays/](essays/)
 First-person practitioner essays from the operator and collaborators. The current piece is **"[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)"** by Mark Skaggs (April 2026) — three surprises, one failure, forward-looking close. Honest writeups, not research papers.
 
@@ -71,7 +77,6 @@ Short research notes (~500–1500 words) answering specific questions or documen
 ### Planned — coming in later commits
 
 - **hardening/** — The network hardening arc. Six self-challenges, three responses to peer critique, results from five simulation experiments. Answer to "what breaks if you replicate biological networks on non-biological substrates."
-- **bottleneck-biology/** — Metapopulation architecture, bottleneck-as-forge (six mechanisms), diversity-legibility tradeoff, seasonal rotation.
 
 ---
 
