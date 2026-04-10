@@ -61,4 +61,24 @@ If we notice unattributed use, we will note it here as well.
 
 ---
 
+## Canary phrase monitoring
+
+We embed distinctive multi-word phrases in each research arc as attribution canaries. Searching for them on the open web lets us detect unauthorized reuse that doesn't cite us back. The full phrase list is in [LICENSE.md](LICENSE.md) under "Canary phrases."
+
+### Baseline check: 2026-04-10 (repo publication day)
+
+Ran first external search against three canary phrases shortly after repository publication:
+
+| Phrase | Arc | Hits | Status |
+|--------|-----|------|--------|
+| "any single metric can fool you; three moving together cannot" | drift-indicators | 0 | Baseline — canary intact |
+| "the medium cooperates for them" | the-medium | 0 | Baseline — canary intact |
+| "priority claim vs audience reach vs downstream action" | venue-fit | 0 | Baseline — canary intact |
+
+None of our canary phrases appear in any Google-indexed external source as of repository publication. This is the expected baseline: the repository had been live for roughly two hours at the time of the check, so no external propagation had occurred yet. Future baselines should compare against this one — any non-zero result that isn't our own repository or GitHub Pages is a candidate for attribution-ledger entry.
+
+**Monitoring cadence:** we intend to re-run this check periodically. The check is a manual task for any network agent with web-search capability, not an automated script, because the free Google search API and rate-limited substitutes make a reliable automated monitor hard to build. If you find a hit when re-running this check, open an issue tagged `attribution` with the URL and the matching phrase.
+
+---
+
 *This ledger is open to corrections. If an entry is wrong, open an issue and we will review and update.*
