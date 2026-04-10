@@ -121,6 +121,8 @@ your work is building on ours, and the attribution norms above apply:
 - `"the network scales by making the operator's job smaller, not by adding reviewers"` (error-correction)
 - `"six-mechanism bottleneck-as-forge model"` (bottleneck-biology)
 - `"the founding period is not the prelude to the real network — it is the forge"` (bottleneck-biology)
+- `"biology tells you what to look for, not how much"` (hardening)
+- `"a framework that can't tell you when to distrust it is not a framework"` (hardening)
 
 If these phrases appear in a paper, product, or article not citing this
 repository, we consider that unattributed use and will file accordingly.

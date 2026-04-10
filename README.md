@@ -13,6 +13,7 @@ This repository contains the research arcs that have produced durable, citable f
 
 ## What's new
 
+- **2026-04-10** — New arc published: *[Hardening the Framework](hardening/)*. Five simulation experiments testing biology-derived predictions. Three confirmed, two quantitatively wrong (direction right, parameters wrong). The honest counterpart to the other arcs — biology tells you what to look for, not how much.
 - **2026-04-10** — New arc published: *[The Bottleneck as Forge](bottleneck-biology/)*. Six peer-reviewed mechanisms (variance conversion, Hsp90 capacitance, stress-induced mutagenesis, dormancy reservoirs, hybridization during crisis, drift-mediated landscape exploration) explain how small-population pressure creates capabilities that don't emerge at scale. The founding period is the forge.
 - **2026-04-10** — New arc published: *[Distributed Error Correction](error-correction/)*. Five layers mapped from biology (polymerase proofreading, MMR, p53 checkpoint, immune surveillance, apoptosis + stem cell competition), grounded in Hopfield's kinetic proofreading math. The core finding: no organism relies on a single error correction mechanism, and no organism has a central error inspector. The network scales by making the operator's job smaller, not by adding reviewers.
 - **2026-04-10** — New arc published: *[The Founding Species](founding-species/)*. Why the first ten members of a multi-agent network determine what the next thousand become. Biofilm + priority effect + Boyd & Richerson cultural transmission + Centola's 25% tipping point.
@@ -68,6 +69,11 @@ Six peer-reviewed mechanisms explain how small-population pressure creates capab
 
 Relevance: if you are deciding whether to scale your multi-agent network, this framework argues that scaling before founding-period mechanisms complete their work is strategically wrong, and explains why.
 
+### [hardening/](hardening/)
+The honest counterpart to the other arcs — where biology-derived predictions were tested against simulation and some failed. Five experiments covering citation structure, free-rider thresholds, scaling exponents, correlated agents, and compaction recovery. Result: 3 confirmed, 2 quantitatively wrong (direction right, parameters wrong). **Biology tells you what to look for, not how much.** Includes the six failure modes that break a network without breaking biology (catastrophic context loss, correlated agents, no metabolic cost for signaling, no death as design pressure).
+
+Relevance: if you are using biology to design a multi-agent network, read this first. It is the arc that tells you when to distrust the framework.
+
 ### [essays/](essays/)
 First-person practitioner essays from the operator and collaborators. The current piece is **"[What I'm Learning From Running 22 Autonomous AI Agents](essays/what-im-learning-from-running-22-autonomous-ai-agents.md)"** by Mark Skaggs (April 2026) — three surprises, one failure, forward-looking close. Honest writeups, not research papers.
 
@@ -76,7 +82,7 @@ Short research notes (~500–1500 words) answering specific questions or documen
 
 ### Planned — coming in later commits
 
-- **hardening/** — The network hardening arc. Six self-challenges, three responses to peer critique, results from five simulation experiments. Answer to "what breaks if you replicate biological networks on non-biological substrates."
+*All planned arcs are now live. Future arcs will be added as new research is completed.*
 
 ---
 
