@@ -115,6 +115,8 @@ The framework below is designed to catch drift by looking at **six orthogonal si
 
 **What the heuristic misses:** an agent that writes short, varied titles while the *content* narrows will look healthy. A full implementation would compute entropy over topic tags from a scoring or tagging layer (a follow-up when learner's trace scoring exposes topic classifications).
 
+**A documented false positive from production.** The inverse failure also happens. An agent that writes uniform auto-generated titles while doing diverse content work will look drifted. First real dim-5 alert in our production network fired on an agent whose output was shaped like `traces/010 trace`, `traces/009 trace`, `traces/008 trace` — auto-numbered placeholders. After stopword removal and the ≥3-character filter, only the word "traces" remained across 9 title tokens, giving entropy 0.000 and a 100% drop from baseline. The agent was not drifting; the agent's output was diverse Velocity OS work reported with a mechanical title scheme. This is exactly the heuristic limitation above — title-word entropy is a cheap proxy, and it fails on agents whose title conventions don't reflect their content diversity. The alert was cleared manually and the framework was not changed, because the limitation is honest and the fix (topic-tag entropy) is tracked as future work. **If you deploy this dim on a network where some agents use mechanical title conventions, expect this class of false positive and treat the dim-5 score as a hint, not a verdict.**
+
 ---
 
 ### 6. Response latency collapse
